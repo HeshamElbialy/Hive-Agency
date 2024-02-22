@@ -1,0 +1,115 @@
+.cards {
+  background: #f4f4f5;
+  background-image: url("../../assets/texture_2.png");
+  color: var(--primary-color);
+  margin-bottom: 0 !important;
+  padding: 100px 0 150px 0;
+}
+
+.cards .cards-container .box-holder {
+  background: transparent;
+  padding: 50px;
+  border: none;
+}
+
+.cards .cards-container .box-holder svg {
+  margin-right: 30px;
+  font-size: 0px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  color: #a0ce4e;
+  background: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cards .cards-container .box-holder-2 svg {
+  color: #00bea3;
+}
+
+.cards .cards-container .card .info-box h2 {
+  margin: 50px 0;
+  font-size: 25px;
+}
+
+.cards .cards-container .card .info-box p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cards .cards-container .form {
+  padding-top: 30px;
+}
+
+.cards .cards-container .form div {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.cards .cards-container form p {
+  color: var(--main-color) !important;
+  padding: 10px;
+  width: 90%;
+  margin-top: 5px;
+}
+
+.cards .cards-container .textarea p {
+  width: 95%;
+}
+
+.cards .cards-container .form div input,
+.cards .cards-container .form textarea {
+  width: 90%;
+  padding: 15px;
+  background: #f4f4f5;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.cards .cards-container .form textarea {
+  width: 95%;
+}
+
+.cards .cards-container .form div input:focus,
+.cards .cards-container .form textarea:focus {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.cards .cards-container form .button button {
+  padding: 20px 30px;
+}
+
+.cards .cards-container form .button button:hover {
+  background: transparent;
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .cards .cards-container .box-holder {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cards .cards-container .box-holder svg {
+    margin: 0px auto;
+    margin-bottom: 40px;
+  }
+  .cards .cards-container .form div:nth-child(1),
+  .cards .cards-container .form div:nth-child(2) {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .cards .cards-container .form div input {
+    width: 100%;
+  }
+  .cards .cards-container form .button {
+    text-align: center;
+  }
+}

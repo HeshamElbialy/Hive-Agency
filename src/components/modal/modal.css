@@ -1,0 +1,45 @@
+.modalBackground {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.layout {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.modal-container {
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.modalBackground button {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: fit-content;
+  text-align: right;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+.modalBackground img {
+  width: 100% !important;
+  height: 80vh !important;
+}

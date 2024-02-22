@@ -1,0 +1,41 @@
+.works .tabs-container .nav {
+  border-bottom: none;
+}
+
+.works .tabs-container .nav .nav-link {
+  text-align: center !important;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.works .tabs-container .nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.works .tabs-container .nav .active {
+  background: transparent;
+  color: var(--main-color);
+}
+
+.works .tabs-container .image-box,
+.works .tabs-container .image-box img {
+  height: 100%;
+}
+
+.works .tabs-container .image-box img {
+  cursor: pointer;
+}

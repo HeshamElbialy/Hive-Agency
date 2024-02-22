@@ -1,0 +1,93 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/bg-row-41.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.hero .hero-container {
+  text-align: center;
+}
+
+.hero .hero-container .text-box {
+  position: relative;
+  z-index: 99;
+  background: url("../../assets/pattern-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.hero .hero-container .text-box h6 {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+
+.hero .hero-container .text-box h2 {
+  font-size: 140px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.hero .hero-container .text-box h2 span img {
+  width: 150px;
+  /* height: 0px; */
+}
+
+.hero .hero-container .text-box p {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+
+.hero .hero-container .text-box p span:nth-child(1) {
+  color: #a0ce4e;
+}
+
+.hero .hero-container .text-box p span:nth-child(2) {
+  color: #03b9a0;
+}
+
+.hero .hero-container .text-box p span:nth-child(3) {
+  color: #f1894c;
+}
+
+/* ========= MEDEIA ========== */
+
+@media (max-width: 767px) {
+  .hero .hero-container .text-box h2 {
+    font-size: 40px;
+  }
+  .hero .hero-container .text-box p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .hero .hero-container .text-box h2 {
+    font-size: 60px;
+  }
+  .hero .hero-container .text-box p {
+    font-size: 35px;
+  }
+}

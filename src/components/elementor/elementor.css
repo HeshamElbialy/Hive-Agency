@@ -1,0 +1,142 @@
+.elementor {
+  background: #1f2732;
+  background-image: url("../../assets/texture.png");
+  padding: 100px 0;
+  color: var(--secondary-color);
+  position: relative;
+}
+
+.elementor .elementor-container .columnBox {
+  margin-bottom: 100px;
+}
+
+.elementor .elementor-container p {
+  color: #777;
+}
+
+.elementor .elementor-container .image-box {
+  position: relative;
+}
+
+.elementor .elementor-container .columnBox1 .image-box::after,
+.elementor .elementor-container .columnBox3 .image-box::after {
+  content: url("../../assets/right_arrow.png");
+  position: absolute;
+  right: 30%;
+  top: 95%;
+}
+
+.elementor .elementor-container .columnBox2 .image-box::after {
+  content: url("../../assets/left_arrow.png");
+  position: absolute;
+  left: 0%;
+  top: 95%;
+}
+
+.elementor .elementor-container .image-box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 10px solid #363d47;
+}
+
+.elementor .elementor-container .title {
+  font-size: 50px;
+  position: relative;
+  z-index: 9 !important;
+}
+
+.elementor .elementor-container .columnBox1 .title {
+  text-align: right;
+}
+
+.elementor .elementor-container .columnBox1 .title-box {
+  width: 100%;
+}
+
+.elementor .elementor-container .columnBox1 .title-box h1 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 150px;
+}
+
+.elementor .elementor-container .columnBox2 .title-box h1 {
+  color: #a0ce4e;
+  font-weight: bold;
+  font-size: 150px;
+}
+
+.elementor .elementor-container .columnBox3 .title-box h1 {
+  color: #00bea3;
+  font-weight: bold;
+  font-size: 150px;
+}
+
+.elementor .elementor-container .columnBox3 .title-box h1 {
+  color: #00bea3;
+  font-weight: bold;
+  font-size: 150px;
+}
+
+.elementor .elementor-container .columnBox4 .title-box h1 {
+  color: #f1894c;
+  font-weight: bold;
+  font-size: 150px;
+}
+
+/* ============= MEDIA =============== */
+
+@media (max-width: 576px) {
+  .elementor .elementor-container .columnBox .title-box h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .elementor .elementor-container .columnBox {
+    text-align: center;
+  }
+  .elementor .elementor-container .image-box img {
+    margin: 5px auto;
+  }
+  .elementor .elementor-container .columnBox .title-box {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .elementor .elementor-container .columnBox2 .row,
+  .elementor .elementor-container .columnBox4 .row {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .elementor .elementor-container p {
+    margin-top: 30px;
+  }
+  .elementor .elementor-container .columnBox1 .image-box::after,
+  .elementor .elementor-container .columnBox3 .image-box::after,
+  .elementor .elementor-container .columnBox2 .image-box::after {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .elementor .elementor-container .columnBox .title-box h1 {
+    font-size: 100px;
+  }
+  .elementor .elementor-container .columnBox1 .image-box::after,
+  .elementor .elementor-container .columnBox3 .image-box::after {
+    right: 0%;
+    top: 95%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .elementor .elementor-container .columnBox1 .image-box::after,
+  .elementor .elementor-container .columnBox3 .image-box::after {
+    right: 20%;
+    top: 95%;
+  }
+}

@@ -1,0 +1,23 @@
+.services .services-container .card {
+  border: none;
+}
+
+.services .services-container .card {
+  text-align: center;
+}
+
+.services .services-container .card img {
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.services .services-container .text-box h4 {
+  margin: 15px 0;
+}
+
+.services .services-container .text-box p {
+  max-width: 300px;
+  margin: 5px auto;
+  color: #777;
+}
